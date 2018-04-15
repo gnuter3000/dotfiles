@@ -137,6 +137,11 @@ set smartcase
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
 
+" Remember last position in file
+if has("autocmd")
+      au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+          \| exe "normal! g'\"" | endif
+  endif
 
 " ============================================================================
 " Python IDE Setup
