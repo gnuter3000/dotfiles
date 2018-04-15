@@ -12,8 +12,8 @@ git clone git://github.com/Lokaltog/vim-powerline.git
 cd ~/.vim/bundle
 git clone https://github.com/kien/ctrlp.vim.git
 
-cd ~/.vim/bundle
-git clone https://github.com/klen/python-mode
+# cd ~/.vim/bundle
+# git clone https://github.com/klen/python-mode
 
 cd ~/.vim/bundle
 git clone git://github.com/davidhalter/jedi-vim.git
