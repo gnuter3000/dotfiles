@@ -93,6 +93,7 @@ syntax on
 
 " Showing line numbers and length
 set number  " show line numbers
+set relativenumber " show relative numbers in present line
 set tw=79   " width of document (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
@@ -142,7 +143,6 @@ if has("autocmd")
       au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
           \| exe "normal! g'\"" | endif
   endif
-
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
