@@ -33,9 +33,9 @@ let mapleader = ","
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-"" noremap <C-n> :nohl<CR>
-"" vnoremap <C-n> :nohl<CR>
-"" inoremap <C-n> :nohl<CR>
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
+inoremap <C-n> :nohl<CR>
 
 
 " Quicksave command

@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# remove existing folders and files
+rm -fr ~/.vim* 2>/dev/null
+
 cp vimrc ~/.vimrc
 
 mkdir -p ~/.vim/colors && cd ~/.vim/colors
@@ -13,10 +18,10 @@ cd ~/.vim/bundle
 git clone https://github.com/kien/ctrlp.vim.git
 
 cd ~/.vim/bundle
-git clone https://github.com/klen/python-mode
+git clone --recursive https://github.com/python-mode/python-mode.git
 
 cd ~/.vim/bundle
-git clone git://github.com/davidhalter/jedi-vim.git
+git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
 mkdir -p ~/.vim/ftplugin
 wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
