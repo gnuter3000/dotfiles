@@ -2,6 +2,8 @@
 
 source: https://www.youtube.com/watch?v=YhqsjUUHj6g
 
-don't forget to install pdbpp with
+don't forget to install pdb++ with
 
-pip install pdbpp
+```bash
+sudo pip install pdbpp
+```
