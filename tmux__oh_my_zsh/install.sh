@@ -16,3 +16,5 @@ bash ./oh-my-zsh/tools/install.sh
 rm -fr oh-my-zsh 2>/dev/null
 rm -fr .zshrc 2>/dev/null
 cp .zshrc ~
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/
+echo "please add zsh-autosuggestions to plugins in .zshrc"
