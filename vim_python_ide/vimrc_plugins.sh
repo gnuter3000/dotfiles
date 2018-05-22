@@ -26,3 +26,4 @@ git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
 mkdir -p ~/.vim/ftplugin
 wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
+git clone https://github.com/klen/rope-vim.git
