@@ -61,7 +61,6 @@ map <c-h> <c-w>h
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
 
-
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
 
@@ -176,7 +175,9 @@ set wildignore+=*/coverage/*
 " let g:pymode_syntax = 1
 " let g:pymode_syntax_builtin_objs = 0
 " let g:pymode_syntax_builtin_funcs = 0
-" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+map <Leader>p <esc>:PymodeRun<CR>
+map <Leader>l <esc>:PymodeLintAuto<CR>
 
 " Settings for jedi-vim
 " cd ~/.vim/bundle
@@ -207,5 +208,5 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " Python folding
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
-set nofoldenable
+" set nofoldenable
 
