@@ -126,9 +126,9 @@ set smartcase
 
 " Disable stupid backup and swap files - they trigger too many events
 " for file system watchers
-"" set nobackup
-"" set nowritebackup
-"" set noswapfile
+set nobackup
+set nowritebackup
+set noswapfile
 
 
 " Setup Pathogen to manage your plugins
@@ -167,7 +167,7 @@ set wildignore+=*/coverage/*
 " and uncomment the part about jedi-vim instead
 " cd ~/.vim/bundle
 " git clone https://github.com/klen/python-mode
-" map <Leader>g :call RopeGotoDefinition()<CR>
+map <Leader>g :call RopeGotoDefinition()<CR>
 " let ropevim_enable_shortcuts = 1
 " let g:pymode_rope_goto_def_newwin = "vnew"
 " let g:pymode_rope_extended_complete = 1
@@ -175,9 +175,10 @@ set wildignore+=*/coverage/*
 " let g:pymode_syntax = 1
 " let g:pymode_syntax_builtin_objs = 0
 " let g:pymode_syntax_builtin_funcs = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 map <Leader>p <esc>:PymodeRun<CR>
 map <Leader>l <esc>:PymodeLintAuto<CR>
+map <Leader>q <esc><c-w>j<esc>:q<CR>
 
 " Settings for jedi-vim
 " cd ~/.vim/bundle
